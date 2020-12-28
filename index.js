@@ -4,6 +4,7 @@ const bot = new Discord.Client();
 const fs = require('fs');
 const blacklistUsers = "./blacklist.json"
 const badLinks = require("./badLinks.json") 
+const token = process.env.BOT_TOKEN;
 
 const AntiSpam = require('discord-anti-spam');
 const antiSpam = new AntiSpam({
